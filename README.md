@@ -1,12 +1,12 @@
 <h3>Follow below steps run this repository</h3>
-```sh
-    git clone https://github.com/parthdev9747/wallet.git
-    composer install
-    php artisan migrate
-    php artisan passport:keys
-    php artisan passport:client --personal
-    php artisan serve
-```
+<ol>
+    <li>git clone https://github.com/parthdev9747/wallet.git</li>
+    <li>composer install</li>
+    <li>php artisan migrate</li>
+    <li>php artisan passport:keys</li>
+    <li>php artisan passport:client --personal</li>
+    <li>php artisan serve</li>
+</ol>
 
 <h3>6 endpoint are implemented</h3>
 <ol>
