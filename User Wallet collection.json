@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "e9d9b7da-c3ba-4a95-8421-aa0b66c7d82d",
+		"name": "User Wallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15873338",
+		"_collection_link": "https://planetary-rocket-696308.postman.co/workspace/My-Workspace~3d1bf745-687f-4418-85b6-b110139ce94d/collection/15873338-e9d9b7da-c3ba-4a95-8421-aa0b66c7d82d?action=share&source=collection_link&creator=15873338"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test\",\r\n    \"email\": \"test12d3f@yopmail.com\",\r\n    \"password\": \"123456\",\r\n    \"password_confirmation\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test12d3f@yopmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YmVjM2RkOC1hZTljLTQ4ZDMtOWQ5Zi05NTg2YjBlMzgxYjUiLCJqdGkiOiI5ODY4MzM5ZjJkYjM5MmNkNzliNzY1NTY1Yzk4MTQ0MjA2YmI5MWZjMjEzN2U1ODE5MzBmNGQyZWM1MTRmZmU5MzViN2Y2ZDI5ZTgyZTAwNCIsImlhdCI6MTcxNDM5MDcyOC41NTM1MjksIm5iZiI6MTcxNDM5MDcyOC41NTM1MzMsImV4cCI6MTc0NTkyNjcyOC41NDQ0Mywic3ViIjoiMSIsInNjb3BlcyI6W119.VXIYi_FG0SgIS4B54Rhi8W330F4TTvYbZ5k9gp-0B3GRXW9Fx4omn7wUbkrYuyZS_e-l0_QJNyL6nohyfZWe7MYw8N7ugRfckPeIzbuobVNIZ_cqWj_AmLtidLAS7ySzr3H5wRihQiIDLcqZ2HQQ5vdogyHhkDLGyFuBAzOfO-D66T5Ogd5tv14hVpq8vZJB5o9K-d9SQo-ccO8Et8u9TpGGgj1Wu3L_Y8ojJhTF0HPwMWHi_M_MplJkm8P7P4IZJkukunGqjLZhROZe_9lKy6BBeKGdrxjX9lmI7o9soeweeYhXjBA35VQCn3Pj3NFDceGuMCyhSyrMiUn_mLP-2nJJ6K_qi52q1ZUDA8dprrzAwf4KLc9i4HaEi9JrDPDjPIRINAM1Ug8Cylr2C4pZB0wESsKNjRATWupWrulJX9H11QziJMRyZ6Nr5YHZ9uzYuJLLNfhI2AizZaanm_VxozQenszTeA09dYTBzkAwjEH-Y9hUbApc4A5MyshnLJn8UOKblw1p5lX2R-a9cbk9enASlKKwq1MRmzfyUGlCJduL7t2YdOJu2BJF7o2_tWuNCfLb4MmADYeNDc4GrOcxcpSRMaKa0Vjfw3ix8MUx3w_QQc_fAVoe1T3c5vaerYKelig2vSf7DLltf_H6KrPux5SsN7gPYzeQ6TnZrKaMio0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Money",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YmVjM2RkOC1hZTljLTQ4ZDMtOWQ5Zi05NTg2YjBlMzgxYjUiLCJqdGkiOiIwZTIyNTNiYjI0NTE1MmNjNjdiYjYxZTU0N2M0MzczYjIyODAzMjVmZTY3Mjc0YTE5ZWQ0NjFhN2Y1NmM2ZGMyYmNiYjU1Y2VlODJlZmU5NCIsImlhdCI6MTcxNDM5MTM0Mi43NjMyMjEsIm5iZiI6MTcxNDM5MTM0Mi43NjMyMjUsImV4cCI6MTc0NTkyNzM0Mi43NTM4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.M8V20H9E2JXvu0bZWbVkgwFL4i5SIe81I4kwck4iiA6GM2-pNaow6LXrrSbGj-cO88tl5kscwRqsfdVHWhNXUvimoytW9C64H8ZFOqkbqYNmnFKtKPNrbwuRw_qeJHLq4p5MIw0mO1s6uAavtZdHAOGq0Et8L9iaC7FmabMlHISjQzF0mEUpxn9BdcokTPz52pRQwcZv2bBU9W1p8Gr8u6yxnGTLrpLsmu14U6r9quzq0HkZZMJX-9rxXgE3TNdDt-lyH2p32Q0uzQpfRU_Cjr5yWJ-28VDMCnfOd-iULLFPgFxaGw2hYF8ffVkEYveHl5-fhVPDUSIYF8KUcf4rWo52Q2L-bFJWEcooYdkE-0V47TW5wegRowBdAfZnr_LZDPoAuaULqvTtHgF6p8t-UKkH7p25t2t1BmzKHOAWEN0Nv2tKKf--IHBCNyCHzvz-45x5gh-60ihvVNEk0jJzdxbOyFSaEGxE8GfPA8lAff7g2WuXwXhYTUSUNqh1j5Zoc-iG79LQqGQXZkN1VWDEQ0ywx0P-DdNKmGsP0zsYei0c8ELSbuDrsssDiftYt_5OKcCj7CdUkmiWqwxqIs7SM4UasdIEEU_rHfl05ul5FdRih7d49m1-aVsXJiQt_tO0zYZQuD3VUEmxsReh1Rn3zuJQRCw3UQMrqfyaLXzYE2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/add-money",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-money"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buy cookie",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YmVjM2RkOC1hZTljLTQ4ZDMtOWQ5Zi05NTg2YjBlMzgxYjUiLCJqdGkiOiIwZTIyNTNiYjI0NTE1MmNjNjdiYjYxZTU0N2M0MzczYjIyODAzMjVmZTY3Mjc0YTE5ZWQ0NjFhN2Y1NmM2ZGMyYmNiYjU1Y2VlODJlZmU5NCIsImlhdCI6MTcxNDM5MTM0Mi43NjMyMjEsIm5iZiI6MTcxNDM5MTM0Mi43NjMyMjUsImV4cCI6MTc0NTkyNzM0Mi43NTM4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.M8V20H9E2JXvu0bZWbVkgwFL4i5SIe81I4kwck4iiA6GM2-pNaow6LXrrSbGj-cO88tl5kscwRqsfdVHWhNXUvimoytW9C64H8ZFOqkbqYNmnFKtKPNrbwuRw_qeJHLq4p5MIw0mO1s6uAavtZdHAOGq0Et8L9iaC7FmabMlHISjQzF0mEUpxn9BdcokTPz52pRQwcZv2bBU9W1p8Gr8u6yxnGTLrpLsmu14U6r9quzq0HkZZMJX-9rxXgE3TNdDt-lyH2p32Q0uzQpfRU_Cjr5yWJ-28VDMCnfOd-iULLFPgFxaGw2hYF8ffVkEYveHl5-fhVPDUSIYF8KUcf4rWo52Q2L-bFJWEcooYdkE-0V47TW5wegRowBdAfZnr_LZDPoAuaULqvTtHgF6p8t-UKkH7p25t2t1BmzKHOAWEN0Nv2tKKf--IHBCNyCHzvz-45x5gh-60ihvVNEk0jJzdxbOyFSaEGxE8GfPA8lAff7g2WuXwXhYTUSUNqh1j5Zoc-iG79LQqGQXZkN1VWDEQ0ywx0P-DdNKmGsP0zsYei0c8ELSbuDrsssDiftYt_5OKcCj7CdUkmiWqwxqIs7SM4UasdIEEU_rHfl05ul5FdRih7d49m1-aVsXJiQt_tO0zYZQuD3VUEmxsReh1Rn3zuJQRCw3UQMrqfyaLXzYE2c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"noofcookie\": 120\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/buy-cookie",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"buy-cookie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI5YmVjM2RkOC1hZTljLTQ4ZDMtOWQ5Zi05NTg2YjBlMzgxYjUiLCJqdGkiOiI2ZGUwMGRkZTc5N2QzNjg0MDBmYTZhMGMyMDY2NDBiNTBlMjE4Y2UwMDA4ZmM2YWUzNWYyNmY4YzQwZjcyZTU3ZDQ3MjQ4MjBmMDc4YjhiMyIsImlhdCI6MTcxNDM5MTgwMS44NjkzNywibmJmIjoxNzE0MzkxODAxLjg2OTM3MywiZXhwIjoxNzQ1OTI3ODAxLjg2MjI3Niwic3ViIjoiMSIsInNjb3BlcyI6W119.hVa2zkX1l1AR1xHbKCUbwGr98vUO7cyf5xZu0LIjYyPKGilITeRTcxQT0QaR_DYYMTg12Gf5xf9pTcb_5gwRiJ1QmhgumpmkwE9qEZgD88s6gP8MCE1smyOWo8WZrRXW8PjjZqlz1Ve5Gme6Jw2wmomJQgsJF8aw-f0iueBzosQAy3XXhAdTAhGmkW_qYcWdcLB3ziDpebxWe3WudmolIWGwhxLYiO3ayzWwsM2q_0CN343JaNkq5XpyIx0szZHkEJFkyLzGgPd2zhwyY_xc-VlXX0XNetmfSAWelKscv5RH7deUBG-ugrEIuNWJzS65NXfrnSFHZSIRy_9UvaLSaRoyPmja1ANWorLBWQV0kAw1EAPl_sxK-yHZ4-nET_pJAb7ONxYJfgUCfWyfwKLAt1Zf6SBnfSBgfU7dBcGjTbqKxK5-CwTB1hyCODNMRZDwOgwSzWtTps5ymQ1oii4rnEx6ByFE4sWqi_8-6XYKcs25tWmHSykk2zeqwS6P-k4ho1P1MqCfl2TyxfRNTVkDas-d301wGp6EZTOEY7plG5JBhGLRSJiQL7P_uBOxMiLT1vDkM3iPiytOxkhwxreKeUL7C7IJD4KP2dgqBraPU0wzIb3fcZ7EkO4bqPilEFkRd000kVN_FiN2kkE9pT5JXAXF5_kWmrBzw4aGSkcwhoo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/user-profile",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user-profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
